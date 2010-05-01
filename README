@@ -1,0 +1,35 @@
+<html>
+<script src="jquery-1.3.2.min.js"></script>
+<script src="jquery.color.js"></script>
+<script src="jquery.wheelselect.js"></script>
+<script>
+var data = [
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"},
+  {name:"abcde",value:"aiueo"}
+];
+$(document).bind("ready",function() {
+  $("#container").wheelselect({
+    list:data,
+    onselect:function(item) {
+      alert(item.value);
+    }
+  });
+});
+</script>
+<body>
+<div id="container"></div>
+</body>
+</html>
